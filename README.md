@@ -6,9 +6,9 @@ learning css basics to advance and updating daily progress in this repository.
 ### **css Training**
 - Learned **Bsiscs in css**  
 - **selectors and its type** in css  
-- **Combinators** in HTML
+- **Combinators** in css
 - **Styles types - CSS**  
-- **comments, colors, background, images** in HTML  
-- **implemented all these in portfolio** in HTML
+- **comments, colors, background, images** in css
+- **implemented all these in portfolio** in css
 
 ---
