@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-----------here we link our external css----->
+    <link rel="style" href="style.css">
+    <title>css learning</title>
+
+<!-----------------------this is an internal styling-------------------------------------->
+<style>
+
+/*basic selector TYPE in css*/
+p {    
+    color: blueviolet;
+    font-size: medium;
+    /*font-weight: 100;*/
+}
+
+/*basic selector CLASS in css*/
+.styling {   
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*basic selector id  in css*/
+#idtag {   
+    color: red;
+}
+
+/*basic selector Universal in css*/
+* {     
+    background-color: rgb(252, 247, 238);
+}
+
+/*group selector in css*/
+
+h1, p, h2 {
+    color: darkcyan;
+}
+
+/*group selector in css*/
+[title] {
+    color: brown;
+}
+
+/*Combinators in css*/
+
+/*descendant combinator (space)*/
+div p {
+ background-color: rgb(58, 53, 53);
+}
+
+/*Child Combinator (>)*/
+div > p {
+    text-align: center;
+}
+
+/*Adjacent Sibling Combinator (+)*/
+h4 + p {
+    font-weight: 700;
+}
+
+/*General Sibling Combinator (~)*/
+h4 ~ h3 {
+    background-color: bisque;  /*u can set where ever color u want*/
+}
+
+.bgpic {
+    background-image: url("OIP.webp");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+/*comments in css*/
+
+/*
+b
+color: red ===>semicolon missing-can break style rule
+colr: red; ===> ivalid property name
+weight: -1000; ===> invalid values
+p {
+    color: red;;
+    ===>unclosed braces
+    ==>extra colon or brace
+*/
+
+/*colors in css*/
+/*
+text
+bg
+
+
+
+*/
+
+button:hover {
+    color: white;
+    background-color: #1d4ed8;
+}
+
+/* unvisited link */
+a:link {
+  color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+
+q:lang(no) {
+  quotes: "~" "~";
+}
+
+p em:first-child {
+  color: blue;
+}
+
+</style>
+</head>
+<body>
+    <div class="styling">
+<!-------inline styling in css------>
+    <h1 style="color: aqua; font-family: 'Times New Roman', Times, serif;">this is inline styling</h1>
+    <p>hi this is an paragraph tag</p>
+    </div>
+
+    <h2>hii this is an basic selector in css</h2>
+
+    <h5 id="idtag">this is an id tag and it will be style with hash tag</h5>
+
+    <p title="attr">this is an attribute style in css</p>
+    <h4>hi</h4>
+
+    <p>hiiiiii</p>
+    <h3>hello</h3>
+    <h3>gmmmmmmmmm</h3>
+
+<!--colors in css--->
+<p style="color: tomato;">this is an text color </p>  <!--text-->
+
+<!--bg-->
+<p style="background-color: black;">this is an bg color</p>
+
+<!--border-->
+<h1 style="border:2px solid #bd543a;">this is an boder color in css</h1>
+
+<!--bag fadded-->
+<p style="background-color: rgba(200, 105, 90, 0.05);">this is an text color </p> 
+
+
+<!--background in css-->
+
+<!--bg-color-->
+<p style="background-color: black;">this is an bg color</p>
+<p style="background-color: rgba(236, 44, 14, 0.1);">bg transparent color </p>
+
+<div class="bgpic">
+<h2 style="background-image: url(OIP.webp); width: 300px; height: 300px; " >hello this is an background-image formatting technique</h1>
+</div>
+
+<div class="button">
+    <button type="submit">Submit</button>
+</div>
+
+<a href="https://github.com/rithuelan/Responsive-Form/tree/main">rithu git link</a>
+
+
+<p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+
+</body>
+</html>
