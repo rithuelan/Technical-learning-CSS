@@ -7,7 +7,8 @@ learning css basics to advance and updating daily progress in this repository.
 - Learned **Bsiscs in css**  
 - **selectors and its type** in css  
 - **Combinators** in css
-- **Styles types - CSS**  
+- **Styles types - CSS**
+- **Pseudo-classes**  in css
 - **comments, colors, background, images** in css
 - **implemented all these in portfolio** in css
 
