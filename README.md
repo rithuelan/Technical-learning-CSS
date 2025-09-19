@@ -19,5 +19,5 @@ learning css basics to advance and updating daily progress in this repository.
 - **at rules** in css  
 - **web safe fonts** in css
 - **funtions** in css
-- - **implemented each topics with small projects** in css
+--**implemented each topics with small projects** in css
 ---
