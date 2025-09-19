@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animatable CSS Demo</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(120deg, #1d4ed8, #9333ea);
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container */
+    .card {
+      background: white;
+      border-radius: 15px;
+      width: 250px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+    }
+
+    /* Image */
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      transition: transform 0.5s, opacity 0.5s;
+    }
+
+    /* Title */
+    .card h2 {
+      margin: 15px 0;
+      color: #333;
+      transition: color 0.5s, letter-spacing 0.5s;
+    }
+
+    /* Button */
+    .card button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #1d4ed8;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.5s, transform 0.3s, box-shadow 0.3s;
+    }
+
+    /* Hover Effects (Transitions) */
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      background-color: #f0f8ff;
+    }
+
+    .card:hover img {
+      transform: rotate(10deg) scale(1.1);
+      opacity: 0.9;
+    }
+
+    .card:hover h2 {
+      color: #9333ea;
+      letter-spacing: 2px;
+    }
+
+    .card button:hover {
+      background-color: #9333ea;
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(147,51,234,0.5);
+    }
+
+    /* Keyframes Animation */
+    @keyframes pulse {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .card button:active {
+      animation: pulse 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="assets/halleyx.logo.png" alt="Profile">
+    <h2>Rithu Elan</h2>
+    <p>Software Tester</p>
+    <button>Follow</button>
+  </div>
+</body>
+</html>
