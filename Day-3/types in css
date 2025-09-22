@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Types Demo Project</title>
+<style>
+  /* ===== Root & Typography ===== */
+  html { font-size: 16px; } /* rem reference */
+  body {
+    font-family: Arial, sans-serif; /* typography */
+    background: linear-gradient(to right, #f0f0f0, #dcdcdc); /* color/background */
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem; /* rem */
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #1d4ed8; /* color */
+  }
+
+  /* ===== Card Layout ===== */
+  .card {
+    width: 300px; /* px */
+    min-height: 40vh; /* vh */
+    padding: 1.5em; /* em */
+    margin: 2%; /* % */
+    border-radius: 1rem; /* rem */
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* border/outline misc */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* animation/transform */
+    cursor: pointer; /* misc */
+  }
+
+  .card:hover {
+    transform: scale(1.05) rotate(2deg); /* animation/transform */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  }
+
+  /* ===== Card Content ===== */
+  .card h2 {
+    font-size: 1.5rem; /* rem */
+    margin-bottom: 0.5em;
+  }
+
+  .card p {
+    font-size: 1em; /* em */
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    color: #333; /* color */
+  }
+
+  /* ===== Buttons ===== */
+  .card button {
+    padding: 0.8em 1.5em; /* em */
+    font-size: 1rem; /* rem */
+    border: 2px solid #9333ea; /* border */
+    border-radius: 0.5rem;
+    background-color: #9333ea; /* color */
+    color: white;
+    cursor: pointer; 
+    transition: all 0.3s ease; /* animation */
+  }
+
+  .card button:hover {
+    transform: scale(1.1); /* animation/transform */
+    background-color: #7e22ce;
+  }
+
+  /* ===== Inputs ===== */
+  .card input[type="text"] {
+    width: 25ch; /* ch */
+    padding: 0.5em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+  }
+
+  /* ===== Small Text ===== */
+  .card small {
+    font-size: 2ex; /* ex */
+    color: #555;
+  }
+
+  /* ===== Footer ===== */
+  footer {
+    width: 100vw; /* vw */
+    padding: 2vh; /* vh */
+    text-align: center;
+    background-color: #1d4ed8;
+    color: white;
+    font-size: 1.2vmin; /* vmin */
+  }
+
+  /* ===== Responsive Adjustments ===== */
+  @media (max-width: 768px) {
+    .card { width: 90%; }
+  }
+</style>
+</head>
+<body>
+
+<h1>CSS Types Demo Project</h1>
+
+<!-- Card 1 -->
+<div class="card">
+  <h2>Card Title 1</h2>
+  <p>This paragraph demonstrates typography using <strong>em</strong> and <strong>rem</strong> units. Hover to see animation effects.</p>
+  <input type="text" placeholder="Your Name">
+  <button>Click Me</button>
+  <small>Small text using ex unit</small>
+</div>
+
+<!-- Footer -->
+<footer>
+  Footer using <strong>vw</strong>, <strong>vh</strong>, and <strong>vmin</strong> units.
+</footer>
+
+</body>
+</html>
