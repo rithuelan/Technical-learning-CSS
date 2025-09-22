@@ -19,5 +19,15 @@ learning css basics to advance and updating daily progress in this repository.
 - **at rules** in css  
 - **web safe fonts** in css
 - **funtions** in css
+- **animatable** in css
+--**implemented each topics with small projects** in css
+---
+
+## **DAY 3** – Technical Learning 💻
+### **css Training**
+- Learned **units in css**  
+- **types** in css  
+- **px-em** in css
+- **colors** in css
 --**implemented each topics with small projects** in css
 ---
