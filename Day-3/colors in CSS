@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colors</title>
+</head>
+<body>
+    <h1 style="color: red">this is rgb</h1>
+    <h2 style="color: blue;">Blue Text</h2>
+    <p style="background-color: yellow;">Yellow Background</p>
+
+    <p style="color: #ff0000;">Red Text</p>
+    <p style="background-color: #00ff00;">Green Background</p>
+
+    <p style="color: rgb(0, 0, 255);">Blue Text</p>
+    <p style="background-color: rgb(255, 255, 0);">Yellow Background</p>
+
+    <p style="color: rgba(255, 0, 0, 0.5);">Semi-transparent Red</p>
+
+    <p style="color: hsl(200, 100%, 50%);">Bright Blue</p>
+
+
+    <p style="color: hsla(120, 100%, 40%, 0.7);">Transparent Green</p>
+
+</body>
+</html>
