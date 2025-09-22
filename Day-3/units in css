@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS units</title>
+  <style>
+    /* Root font size for rem */
+    html {
+      font-size: 16px; /* 1rem = 16px */
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem; /* rem unit */
+    }
+
+    /* Card Container */
+    .card {
+      width: 300px; /* px */
+      min-height: 40vh; /* vh */
+      background: white;
+      border-radius: 1rem; /* rem */
+      margin: 2%; /* % */
+      padding: 1.5em; /* em */
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Hover effect */
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    /* Headings using rem */
+    .card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Paragraph text using em */
+    .card p {
+      font-size: 1em;
+      line-height: 1.5em;
+      margin-bottom: 1em;
+    }
+
+    /* Input field using ch */
+    .card input[type="text"] {
+      width: 30ch; /* width of ~30 characters */
+      padding: 0.5em;
+      margin-bottom: 1em;
+      font-size: 1rem;
+    }
+
+    /* Buttons using px + hover using % */
+    .card button {
+      padding: 10px 20px; /* px */
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: #9333ea;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .card button:hover {
+      background-color: #7e22ce;
+      transform: scale(1.1); /* relative transform */
+    }
+
+    /* Footer with viewport units */
+    footer {
+      width: 100vw; /* full viewport width */
+      padding: 2vh; /* 2% of viewport height */
+      text-align: center;
+      background-color: #1d4ed8;
+      color: white;
+      font-size: 1.2vmin; /* smallest viewport unit for responsive text */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Card 1 -->
+  <div class="card">
+    <h2>Card Title</h2>
+    <p>This paragraph demonstrates <strong>em</strong> units for line-height and font-size. The padding of the card uses <strong>em</strong> too.</p>
+    <input type="text" placeholder="Your Name">
+    <button>Click Me</button>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <h2>Another Card</h2>
+    <p>Here we are using <strong>rem</strong> for headings and <strong>ch</strong> for input width. The hover effect scales the card using <strong>relative transforms</strong>.</p>
+    <input type="text" placeholder="Email">
+    <button>Submit</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Footer using <strong>vw</strong> width and <strong>vh/vmin</strong> padding/font-size.
+  </footer>
+
+</body>
+</html>
