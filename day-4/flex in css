@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flexbox Dashboard Mini Project</title>
+<style>
+  /* ===== General ===== */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+  }
+  h2 { margin: 0 0 10px; }
+
+  /* ===== Header / Navbar ===== */
+  header {
+    display: flex;                   /* flex container */
+    justify-content: space-between;  /* logo left, menu right */
+    align-items: center;             /* vertical center */
+    padding: 10px 20px;
+    background: #1d4ed8;
+    color: white;
+  }
+  .menu { display: flex; gap: 15px; }
+  .menu div { cursor: pointer; }
+
+  /* ===== Banner ===== */
+  .banner {
+    display: flex;                   /* flex container */
+    justify-content: center;         /* center horizontally */
+    align-items: center;             /* center vertically */
+    height: 120px;
+    background: #3b82f6;
+    color: white;
+    font-size: 1.5rem;
+    margin: 20px;
+    border-radius: 8px;
+  }
+
+  /* ===== Card Grid ===== */
+  .card-container {
+    display: flex;            /* flex row */
+    flex-wrap: wrap;          /* wrap to new line if needed */
+    gap: 20px;                /* space between cards */
+    margin: 0 20px 20px 20px;
+  }
+  .card {
+    flex: 1 1 220px;          /* grow, shrink, base width 220px */
+    min-width: 0;             /* allow shrinking */
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;            /* make card itself flex column */
+    flex-direction: column;
+  }
+  .card h3 { margin: 0 0 10px; }
+  .card p { margin: 0 0 10px; flex-grow: 1; } /* flexible content pushes button down */
+  .card button {
+    align-self: flex-end;     /* override card's align-items */
+    padding: 5px 10px;
+    background: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* ===== Footer ===== */
+  footer {
+    display: flex;                 /* flex row */
+    justify-content: space-around; /* distribute items evenly */
+    align-items: center;           /* vertical center */
+    padding: 15px 0;
+    background: #1e293b;
+    color: white;
+  }
+
+  /* ===== Demo order & special alignment ===== */
+  .card:nth-child(1) { order: 2; }      /* move first card visually */
+  .card:nth-child(3) { order: 1; }      /* move third card to start */
+  .card:nth-child(4) { align-self: flex-start; } /* override card's alignment */
+</style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <div class="logo">My Dashboard</div>
+    <div class="menu">
+      <div>Home</div>
+      <div>Profile</div>
+      <div>Settings</div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    Welcome to Flexbox Dashboard!
+  </div>
+
+  <!-- Card Grid -->
+  <div class="card-container">
+    <div class="card">
+      <h3>Card 1</h3>
+      <p>Some short content.</p>
+      <button>View</button>
+    </div>
+    <div class="card">
+      <h3>Card 2</h3>
+      <p>Longer content that will expand the card's height so we can see how flex-grow and wrapping work.</p>
+      <button>View</button>
+    </div>
+    <div class="card">
+      <h3>Card 3</h3>
+      <p>Medium content for card 3.</p>
+      <button>View</button>
+    </div>
+    <div class="card">
+      <h3>Card 4</h3>
+      <p>Another card with text.</p>
+      <button>View</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>© 2025 My Dashboard</div>
+    <div>Contact</div>
+    <div>Privacy</div>
+  </footer>
+
+</body>
+</html>
