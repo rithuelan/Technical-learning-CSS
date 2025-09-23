@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Entities (Escapes) Demo</title>
+  <style>
+    /* 1. Escape ID starting with digit */
+    #\31 abc {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* 2. Escape dot in class name */
+    .my\.class {
+      background: yellow;
+      padding: 5px;
+    }
+
+    /* 3. Escape colon in class name */
+    .btn\:save {
+      color: white;
+      background: blue;
+      padding: 5px;
+    }
+
+    /* 4. Escape hash in class name */
+    .hash\#tag {
+      border: 2px dashed green;
+      padding: 5px;
+    }
+
+    /* 5. Escape number-only class (e.g., class="100") */
+    .\31 00 {
+      font-style: italic;
+      color: purple;
+    }
+
+    /* 6. Using content with Unicode escape (© symbol) */
+    .copyright::after {
+      content: " \00A9 2025"; /* © 2025 */
+    }
+
+    /* 7. Using \A for newline in content */
+    .notice::after {
+      content: "Line 1\ALine 2";
+      white-space: pre; /* required to render newline */
+      color: brown;
+      display: block;
+      margin-top: 5px;
+    }
+
+    /* 8. Emoji using Unicode escape */
+    .emoji::after {
+      content: " \1F600"; /* 😀 */
+      font-size: 2rem;
+      margin-left: 5px;
+    }
+
+    /* 9. Demonstration: HTML entities do NOT work in CSS */
+    .wrong::after {
+      content: "&copy; 2025"; /* renders literally "&copy; 2025" */
+      color: gray;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Entities / Escapes Demo</h2>
+
+  <div id="1abc">ID = "1abc" → escaped with <code>#\31 abc</code></div>
+  <div class="my.class">Class = "my.class" → escaped with <code>.my\.class</code></div>
+  <div class="btn:save">Class = "btn:save" → escaped with <code>.btn\:save</code></div>
+  <div class="hash#tag">Class = "hash#tag" → escaped with <code>.hash\#tag</code></div>
+  <div class="100">Class = "100" → escaped with <code>.\31 00</code></div>
+
+  <p class="copyright">Copyright served </p>
+  <p class="notice">Notice:</p>
+  <p class="emoji">Emoji example:</p>
+  <p class="wrong">Wrong way (HTML entity in CSS):</p>
+</body>
+</html>
