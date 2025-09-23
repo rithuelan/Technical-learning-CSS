@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+    /* Browser Default */
+    p {
+    color: black;    
+    /* font-size: 16px;   (default) */
+    }
+
+    /* Custom */
+    .custom {
+    color: red;
+    font-size: 24px;
+    }
+    </style>
+
+<body>
+    <p>hi this is default values</p>
+    <!-- Input without value (default = empty) -->
+    <input type="text">
+
+    <!-- Input with custom value -->
+    <input type="text" value="Hello World">
+
+    <p>This is a paragraph (default style).</p>
+    <p class="custom">This is a styled paragraph.</p>
+
+    <div class="default-list">
+        <ul>
+            <li>rithu</li>
+            <li>elan</li>
+        </ul>
+    </div>
+
+</body>
+</html>
