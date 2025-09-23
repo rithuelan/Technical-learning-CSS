@@ -31,3 +31,12 @@ learning css basics to advance and updating daily progress in this repository.
 - **colors** in css
 --**implemented each topics with small projects** in css
 ---
+
+## **DAY 3** – Technical Learning 💻
+### **css Training**
+- Learned **default values in css**  
+- **entities** in css  
+- **flex** in css
+- **grid** in css
+--**implemented each topics with responsive web design** in css
+---
