@@ -1,0 +1,18 @@
+.site-header {
+  @include flex-center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: $primary-color;
+  color: white;
+
+  nav a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $secondary-color; // Pseudo-class
+    }
+  }
+}
