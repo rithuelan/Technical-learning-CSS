@@ -32,7 +32,7 @@ learning css basics to advance and updating daily progress in this repository.
 --**implemented each topics with small projects** in css
 ---
 
-## **DAY 3** – Technical Learning 💻
+## **DAY 4** – Technical Learning 💻
 ### **css Training**
 - Learned **default values in css**  
 - **entities** in css  
