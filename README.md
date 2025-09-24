@@ -40,3 +40,15 @@ learning css basics to advance and updating daily progress in this repository.
 - **grid** in css
 --**implemented each topics with responsive web design** in css
 ---
+
+## **DAY 5** – Technical Learning 💻
+### **css Training**
+- Learned **scss**  
+- **base** in scss  
+- **cards** in scss
+- **header** in scss
+- **mixins** in scss  
+- **varibles** in scss
+- **style** in scss
+--**implemented each topics with responsive web design** in scss
+---
